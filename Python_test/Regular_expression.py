@@ -46,3 +46,12 @@ print(re.search('AB+','ABB'))
 print(re.findall('[Mm]y',txt3))
 
 # \d : 숫자와 문자와 매치되는 문자열을 추출하는 방법 
+
+re.sub('찾을문자','변경할문자',변수명)
+
+'''
+import re
+txt = 'abc@facebook.com와 bbc@google.com에서 이메일이 도착하였습니다.'
+email = re.findall("\S+@[a-z.]+",txt)
+print(email)
+'''
