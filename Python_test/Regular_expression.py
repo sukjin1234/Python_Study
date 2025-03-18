@@ -47,6 +47,8 @@ print(re.findall('[Mm]y',txt3))
 
 # \d : 숫자와 문자와 매치되는 문자열을 추출하는 방법 
 
+# \b : 숫자가 포함되지 않은 단어만 찾도록 제한
+
 re.sub('찾을문자','변경할문자',변수명)
 
 '''
@@ -55,3 +57,6 @@ txt = 'abc@facebook.com와 bbc@google.com에서 이메일이 도착하였습니�
 email = re.findall("\S+@[a-z.]+",txt)
 print(email)
 '''
+
+print(re.findall(r"\d\d\d\d"))
+                # r은 정규식에서 \를 한 번만 적어도 되게 해줌줌
