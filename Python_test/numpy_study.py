@@ -60,8 +60,11 @@ logspace(start, stop, num=n) -> 10**start ~ 10**stop까지의 실수를 로그 �
 .random.rand(m,n) -> 0.0 ~ 1.0 사이의 값으로 생선된다.
                     n은 생략가능 m X n 크기의 2차원 배열 생성
 
-.random.randint(a,b,size =(m,n)) -> a ~ b 사이의 난수를 생성하여 반환한다.
+.random.randint(a,b,size =(m,n)) -> a ~ b 사이의 정수 난수를 생성하여 반환한다.
                             n은 생략가능 m X n 크기의 2차원 배열 반환
+                            
+.random.uniform(low,high,size=n) -> low~high 사이의 실수 난수 생성
+                                    사이즈 개수만큼 만들어줌
                             
 함수	분포 형태	값 범위	자주 나오는 값
 
